@@ -3,294 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Amaibi | Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <title>Patrick Amaibi | Environmentalist & Creative Strategist</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --climate-green: #2ecc71;
-            --tech-cyan: #00f3ff;
-            --deep-space: #050a0f;
-        }
-
-        body {
-            margin: 0;
-            background-color: var(--deep-space);
-            color: white;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
-
-        #canvas-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            z-index: -1;
-        }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-left: 4px solid var(--tech-cyan);
-        }
-
-        .tech-font {
-            font-family: 'Space Mono', monospace;
-        }
-
-        .scroll-section {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .skill-badge {
-            background: rgba(0, 243, 255, 0.1);
-            border: 1px solid var(--tech-cyan);
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin: 4px;
-            display: inline-block;
-        }
-
-        .glow-text {
-            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #050a0f;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1a4a3e;
-            border-radius: 10px;
-        }
+        .hidden-text { display: none; }
+        .scroll-smooth { scroll-behavior: smooth; }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900 font-sans scroll-smooth">
 
-    <div id="canvas-container"></div>
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-green-700 tracking-tighter">PATRICK AMAIBI</span>
+            <div class="space-x-6 hidden md:flex items-center">
+                <a href="#about" class="hover:text-green-600 font-medium transition">About</a>
+                <a href="#design" class="hover:text-green-600 font-medium transition">Portfolio</a>
+                <a href="#experience" class="hover:text-green-600 font-medium transition">Journey</a>
+                
+                <!-- Social Links in Nav -->
+                <div class="flex items-center border-l pl-6 gap-4">
+                    <a href="https://x.com/patrickamaibi" target="_blank" class="text-slate-500 hover:text-black transition text-lg"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/patrickamaibi/" target="_blank" class="text-slate-500 hover:text-blue-600 transition text-lg"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:amaibipatrick@gmail.com" class="bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-green-800 transition shadow-sm">Email Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <main class="relative z-10">
+    <!-- Hero Section -->
+    <header id="about" class="max-w-5xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
+            Advancing <span class="text-green-600">Climate Justice</span> through Tech & Design
+        </h1>
         
-        <!-- HERO SECTION -->
-        <section class="scroll-section">
-            <div class="animate-pulse mb-4 text-cyan-400 tech-font">SYSTEM_READY // Patrick Amaibi</div>
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-4 tracking-tighter">
-                ENVIRON<span class="text-green-500">MENTALIST</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-xl">
-                Tech-savvy professional leveraging <span class="text-cyan-400">GIS</span> and data to drive global climate justice.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-6 text-sm tech-font">
-                <span>[ <a href="mailto:amaibipatrick@gmail.com" class="hover:text-cyan-400">EMAIL</a> ]</span>
-                <span>[ <a href="tel:+2348168269112" class="hover:text-cyan-400">+234 816 826 9112</a> ]</span>
-                <span>📍 PORT HARCOURT, NIGERIA</span>
-            </div>
-        </section>
+        <!-- About Me with Read More -->
+       <!-- REPLACE THE EXISTING .about-card WITH THIS -->
+      <div class="about-card">
+        <p>
+          I work at the intersection of <span class="highlight">artificial intelligence</span>, <span class="highlight">blockchain</span>, and <span class="highlight">environmental systems</span>. My background in environmental engineering shapes a systems-first approach to building and evaluating technology.
+        </p>
+        <p>
+          I focus on AI prompt engineering, AI-assisted workflows, and hands-on testing of Web3 products including wallets, protocols, dashboards, and early-stage infrastructure. My core interests are ReFi, on-chain verification, and AI-driven tools for measurement, reporting, and accountability in climate and impact-focused systems.
+        </p>
+        
+        <!-- NEW BUTTON ADDED HERE -->
+        <div style="margin-top: 32px; text-align: center;">
+          <a href="about.html" class="btn-secondary" style="border-color: var(--primary); color: var(--primary);">
+            Read Full Story
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
 
-        <!-- PROFESSIONAL PROFILE -->
-        <section class="scroll-section">
-            <div class="glass p-8 rounded-xl">
-                <h2 class="text-3xl font-bold mb-6 text-green-400 underline">Professional Profile</h2>
-                <p class="text-lg leading-relaxed text-gray-200">
-                    Adept at leveraging technology to analyze and address complex environmental challenges. 
-                    Proven track record of leadership in community-driven initiatives with a strong passion for 
-                    sustainable development and environmental justice.
-                </p>
+    <!-- Design Portfolio Section -->
+    <section id="design" class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 italic">Some Graphic Design Jobs</h2>
+                <div class="h-1 w-20 bg-green-600 mt-2"></div>
             </div>
-        </section>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Design Job 1 -->
+                <div class="group">
+                    <div class="bg-slate-100 aspect-square rounded-xl mb-4 overflow-hidden shadow-sm group-hover:shadow-xl transition-all border border-slate-200">
+                        <img src="climatej.png" alt="Climate Justice Campaign" class="object-cover w-full h-full group-hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="font-bold text-lg">Climate Justice Campaign</h3>
+                    <p class="text-sm text-slate-500 font-medium italic">Environmental Advocacy</p>
+                </div>
 
-        <!-- EXPERIENCE -->
-        <section class="scroll-section">
-            <h2 class="text-4xl font-bold mb-8 tech-font text-cyan-400">Work_Experience_</h2>
-            <div class="space-y-8">
-                <div class="glass p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-2">
+                <!-- Design Job 2 -->
+                <div class="group">
+                    <div class="bg-slate-100 aspect-square rounded-xl mb-4 overflow-hidden shadow-sm group-hover:shadow-xl transition-all border border-slate-200">
+                        <img src="aycap.png" alt="Global Youth Statement" class="object-cover w-full h-full group-hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="font-bold text-lg">Global Youth Statement</h3>
+                    <p class="text-sm text-slate-500 font-medium italic">Data Visualization</p>
+                </div>
+
+                <!-- Design Job 3 -->
+                <div class="group">
+                    <div class="bg-slate-100 aspect-square rounded-xl mb-4 overflow-hidden shadow-sm group-hover:shadow-xl transition-all border border-slate-200">
+                        <img src="pigd2.png" alt="PIGD Identity" class="object-cover w-full h-full group-hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="font-bold text-lg">PIGD Identity</h3>
+                    <p class="text-sm text-slate-500 font-medium italic">Campaign Strategy </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Journey -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center underline decoration-green-500 underline-offset-8">Professional Journey</h2>
+            
+            <div class="space-y-12 border-l-2 border-slate-200 ml-4 md:ml-0 pl-8">
+                <!-- Role 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 bg-green-600 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-1">
                         <h3 class="text-xl font-bold">National Coordinator</h3>
-                        <span class="text-green-400 tech-font">May 2024 - Present</span>
+                        <span class="text-green-700 font-bold bg-green-50 px-3 py-1 rounded text-sm">2024 - Present</span>
                     </div>
-                    <p class="text-cyan-400 mb-4">African Youth Initiative on Climate Change - Nigeria</p>
-                    <p class="text-sm text-gray-300">Overseeing programs, advocacy, and youth engagement in climate action. Fostering partnerships for climate justice.</p>
+                    <p class="text-slate-700 font-medium italic">African Youth Initiative on Climate Change - Nigeria</p>
                 </div>
 
-                <div class="glass p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-2">
+                <!-- Role 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 bg-slate-400 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-1">
                         <h3 class="text-xl font-bold">Head of Operations</h3>
-                        <span class="text-green-400 tech-font">Apr 2022 - Aug 2025</span>
+                        <span class="text-slate-500 font-bold bg-slate-100 px-3 py-1 rounded text-sm">2021 - 2025</span>
                     </div>
-                    <p class="text-cyan-400 mb-4">Prime Initiative for Green Development Nigeria</p>
-                    <p class="text-sm text-gray-300">Managing strategic initiatives and ensuring efficient workflows for environmental advocacy programs.</p>
+                    <p class="text-slate-700 font-medium italic">Prime Initiative for Green Development (PIGD)</p>
                 </div>
 
-                <div class="glass p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-2">
+                <!-- Role 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 bg-slate-400 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-1">
+                        <h3 class="text-xl font-bold">Graphic Lead</h3>
+                        <span class="text-slate-500 font-bold bg-slate-100 px-3 py-1 rounded text-sm">2023</span>
+                    </div>
+                    <p class="text-slate-700 font-medium italic">African Youth Mobilization for COP (AYM4COP)</p>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 bg-slate-400 w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-1">
                         <h3 class="text-xl font-bold">Graphics Designer</h3>
-                        <span class="text-green-400 tech-font">Sep 2023 - Present</span>
+                        <span class="text-slate-500 font-bold bg-slate-100 px-3 py-1 rounded text-sm">2023 - Present</span>
                     </div>
-                    <p class="text-cyan-400 mb-4">ICCDI</p>
-                    <p class="text-sm text-gray-300">Developing digital communication strategies on climate themes through video and artwork.</p>
+                    <p class="text-slate-700 font-medium italic">ICCDI</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- EDUCATION & GIS SKILLS -->
-        <section class="scroll-section">
+    <!-- Conferences & Leadership -->
+    <section class="bg-slate-900 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-400">Conferences & Leadership</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass p-6 rounded-lg">
-                    <h2 class="text-2xl font-bold mb-4 text-green-400">Education</h2>
-                    <p class="font-bold">B.Eng Civil/Environmental Engineering</p>
-                    <p class="text-sm text-gray-400">University of Port Harcourt (2015-2021)</p>
-                    <p class="mt-4 text-xs italic">Thesis: "Noise Mapping of the University Campus" applying environmental engineering principles.</p>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">LCOY NIGERIA 2025</p>
+                            <p class="text-lg font-semibold">Co-organizer</p>
+                        </li>
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">COP29 (Baku)</p>
+                            <p class="text-lg font-semibold">Delegate & Panelist: AI for Renewable Energy</p>
+                        </li>
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">COP28 (Dubai)</p>
+                            <p class="text-lg font-semibold">Loss & Damage Working Group (YOUNGO)</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="glass p-6 rounded-lg">
-                    <h2 class="text-2xl font-bold mb-4 text-cyan-400">Tech Stack</h2>
-                    <div class="flex flex-wrap">
-                        <span class="skill-badge">QGIS</span>
-                        <span class="skill-badge">ArcGIS</span>
-                        <span class="skill-badge">Tableau</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">Power BI</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">Canva</span>
-                        <span class="skill-badge">Data Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- GLOBAL IMPACT -->
-        <section class="scroll-section">
-            <h2 class="text-4xl font-bold mb-8 tech-font text-white">Global_Impact</h2>
-            <div class="border-l-2 border-green-500 pl-8 space-y-12">
-                <div>
-                    <h3 class="text-2xl font-bold text-cyan-400">COP29 Delegate</h3>
-                    <p class="text-gray-300 mt-2">Panelist: "Artificial Intelligence Solutions to Enable Rapid Scale-Up of Renewable Energy."</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-cyan-400">COP28 Delegate</h3>
-                    <p class="text-gray-300 mt-2">Represented Loss & Damage Working Group of YOUNGO (UN Youth Constituency).</p>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-cyan-400">LCOY 2024</h3>
-                    <p class="text-gray-300 mt-2">Co-Organizer & Speaker: The Role of Youth in Addressing Climate Challenges in Nigeria.</p>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">LCOY NIGERIA 2024</p>
+                            <p class="text-lg font-semibold">Co-Organizer / Speaker</p>
+                        </li>
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">LCOY NIGERIA 2022</p>
+                            <p class="text-lg font-semibold">Graphic and Communication Lead</p>
+                        </li>
+                        <li>
+                            <p class="text-green-400 font-bold text-sm">RECOGNITION</p>
+                            <p class="text-lg font-semibold italic">Volunteer of the Year - Prime Initiative (2021)</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CONTACT / FOOTER -->
-        <section class="scroll-section items-center text-center">
-            <div class="glass p-12 rounded-full aspect-square flex flex-col justify-center items-center w-80 h-80 border-cyan-500 border-2">
-                <h2 class="text-2xl font-bold mb-4">Let's Connect</h2>
-                <p class="text-sm mb-6 text-gray-400">Advancing environmental justice together.</p>
-                <a href="mailto:amaibipatrick@gmail.com" class="bg-cyan-500 text-black px-6 py-2 rounded font-bold hover:bg-white transition-colors">SAY HELLO</a>
-            </div>
-            <p class="mt-12 text-xs opacity-50 tech-font">© 2024 PATRICK AMAIBI // NIGERIA</p>
-        </section>
-
-    </main>
+    <!-- Footer -->
+    <footer id="contact" class="py-16 text-center border-t bg-white">
+        <p class="text-xl font-bold mb-6 italic text-slate-800">Ready to collaborate on the next green initiative?</p>
+        
+        <div class="flex justify-center gap-10 text-3xl mb-10">
+            <!-- Email -->
+            <a href="mailto:amaibipatrick@gmail.com" class="text-slate-400 hover:text-red-500 transition shadow-sm p-3 rounded-full hover:bg-slate-50" title="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/patrickamaibi/" target="_blank" class="text-slate-400 hover:text-blue-600 transition shadow-sm p-3 rounded-full hover:bg-slate-50" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- X / Twitter -->
+            <a href="https://x.com/patrickamaibi" target="_blank" class="text-slate-400 hover:text-black transition shadow-sm p-3 rounded-full hover:bg-slate-50" title="X (Twitter)">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+        
+        <p class="text-sm text-slate-400 tracking-widest uppercase">Patrick Amaibi &copy; 2024</p>
+        <p class="text-xs text-slate-300 mt-2">Environmentalist | Graphic Designer | Climate Advocate</p>
+    </footer>
 
     <script>
-        // THREE.JS SCENE SETUP
-        let scene, camera, renderer, globe, techGrid;
+        function toggleAbout() {
+            const fullText = document.getElementById('about-text-full');
+            const previewText = document.getElementById('about-text-preview');
+            const btn = document.getElementById('read-more-btn');
 
-        function init() {
-            scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-            
-            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.getElementById('canvas-container').appendChild(renderer.domElement);
-
-            // Create a Globe (The Environment)
-            const geometry = new THREE.SphereGeometry(3, 64, 64);
-            const material = new THREE.MeshStandardMaterial({
-                color: 0x1a4a3e,
-                metalness: 0.7,
-                roughness: 0.2,
-                wireframe: false
-            });
-            globe = new THREE.Mesh(geometry, material);
-            scene.add(globe);
-
-            // Create a Tech Grid (The GIS/Data aspect)
-            const gridGeom = new THREE.SphereGeometry(3.2, 32, 32);
-            const gridMat = new THREE.MeshBasicMaterial({
-                color: 0x00f3ff,
-                wireframe: true,
-                transparent: true,
-                opacity: 0.1
-            });
-            techGrid = new THREE.Mesh(gridGeom, gridMat);
-            scene.add(techGrid);
-
-            // Lights
-            const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-            scene.add(ambientLight);
-
-            const pointLight = new THREE.PointLight(0x00f3ff, 1);
-            pointLight.position.set(5, 5, 5);
-            scene.add(pointLight);
-
-            camera.position.z = 8;
-        }
-
-        function animate() {
-            requestAnimationFrame(animate);
-            
-            // Subtle rotation
-            globe.rotation.y += 0.001;
-            techGrid.rotation.y -= 0.0015;
-            techGrid.rotation.x += 0.0005;
-
-            renderer.render(scene, camera);
-        }
-
-        // Scroll Interaction
-        window.addEventListener('scroll', () => {
-            const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-            
-            // Move camera or zoom globe based on scroll
-            camera.position.z = 8 - (scrollPercent * 3);
-            globe.rotation.x = scrollPercent * 2;
-            
-            // Change color slightly as we go down
-            if(scrollPercent > 0.5) {
-                globe.material.color.setHex(0x052a22);
+            if (fullText.classList.contains('hidden')) {
+                fullText.classList.remove('hidden');
+                btn.innerText = 'Show Less';
             } else {
-                globe.material.color.setHex(0x1a4a3e);
+                fullText.classList.add('hidden');
+                btn.innerText = 'Read More';
             }
-        });
-
-        // Resize handler
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        init();
-        animate();
-
-        // Mouse interaction
-        document.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth) - 0.5;
-            const y = (e.clientY / window.innerHeight) - 0.5;
-            
-            globe.position.x = x * 0.5;
-            globe.position.y = -y * 0.5;
-        });
+        }
     </script>
 </body>
 </html>
